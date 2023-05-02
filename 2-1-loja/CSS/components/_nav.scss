@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  background-color: azure;
+  height: 80px;
+}
+.nav__logo {
+  height: 40px;
+}
+.nav__menu {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  gap: 32px;
+}
+
+.menu {
+  display: flex;
+  gap: 32px;
+}
+.menu__label_content {
+  display: none;
+}

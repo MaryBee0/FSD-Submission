@@ -1,0 +1,29 @@
+.splash {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.splash__content {
+  position: absolute;
+  top: 80px;
+  bottom: inherit;
+  left: 100px;
+  color: white;
+  font-size: larger;
+}
+
+.splash_button {
+  background-color: #fced70;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 5px 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .splash__content {
+    top: inherit;
+    bottom: 0;
+  }
+}
