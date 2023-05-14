@@ -1,3 +1,13 @@
-.images_content {
-  text-decoration: none;
+.btn {
+	height: 50px;
+	padding: 16px 24px;
+	border: none;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 500;
+
+	&.btn-primary {
+		color: #131313;
+		background-color: #fced70;
+	}
 }
