@@ -1,29 +1,35 @@
 .splash {
-  display: block;
-  width: 100%;
   position: relative;
-}
 
-.splash__content {
-  position: absolute;
-  top: 80px;
-  bottom: inherit;
-  left: 100px;
-  color: white;
-  font-size: larger;
-}
-
-.splash_button {
-  background-color: #fced70;
-  border: none;
-  border-radius: 4px;
-  margin-top: 10px;
-  padding: 5px 5px;
-}
-
-@media screen and (max-width: 768px) {
   .splash__content {
-    top: inherit;
-    bottom: 0;
+    position: absolute;
+    top: 70px;
+
+    h3 {
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 33px;
+      margin-bottom: 13px;
+      color: white;
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 70vh;
+    object-fit: cover;
+    object-position: center;
+
+    .splash__content {
+      top: 80%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+      h3 {
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
   }
 }

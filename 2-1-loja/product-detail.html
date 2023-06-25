@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/partials/_menu.scss" />
+
+  <title>Product Detail</title>
+  <style>
+    .product-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .product-image {
+      width: 200px;
+      margin-right: 20px;
+    }
+
+    .related-products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <body>
+    <h1>Product Details</h1>
+    <div id="productDetails"></div>
+    <button id="addToCartButton">Add to Cart</button>
+    <h2>Related Products</h2>
+    <div id="relatedProductsGrid"></div>
+
+
+    <header>
+      <nav class="nav">
+        <a class="nav__logo" href="index.html">
+          <img src="./assets/edit-extended-logo.png" class="nav__logo" alt="logo" />
+        </a>
+        <div class="nav__menu responsive">
+          <div class="nav__menu__inner">
+            <span class="menu__label">Seating <i class="fa fa-angle-down"></i> </span>
+            <div class="menu__label_content">
+              <div class="row">
+                <div class="col-lg-3">
+                  <h3>Shop by Category</h3>
+                  <ul>
+                    <a href="#">
+                      <li>Sectionals</li>
+                    </a>
+                    <a href="#">
+                      <li>Sofas</li>
+                    </a>
+                    <a href="#">
+                      <li>Loveseats</li>
+                    </a>
+                    <a href="#">
+                      <li>Accent Chairs</li>
+                    </a>
+                    <a href="#">
+                      <li>Sleepers</li>
+                    </a>
+                    <a href="#">
+                      <li>Sleep Kits</li>
+                    </a>
+                    <a href="#">
+                      <li>Ottomans</li>
+                    </a>
+                    <a href="#">
+                      <li>Seating Accessories</li>
+                    </a>
+                    <a href="#">
+                      <li>All Seating</li>
+                    </a>
+                  </ul>
+                </div>
+
+                <div class="col-lg-3">
+                  <h3>Shop by Collection</h3>
+                  <ul>
+                    <a href="#">
+                      <li>Nomad Collection</li>
+                    </a>
+                    <a href="#">
+                      <li>Field Collection</li>
+                    </a>
+                    <a href="#">
+                      <li>Range Collection</li>
+                    </a>
+                    <a href="#">
+                      <li>Union Collection</li>
+                    </a>
+                    <a href="#">
+                      <li>New</li>
+                    </a>
+                    <a href="#">
+                      <li>Compare Collections</li>
+                    </a>
+                  </ul>
+                </div>
+
+                <div class="col-lg-3">
+                  <h3>Shop by Uphoistery</h3>
+                  <ul>
+                    <a href="#">
+                      <li>Performace Fabric Seating</li>
+                    </a>
+                    <a href="#">
+                      <li>Italian Leather Seating</li>
+                    </a>
+                    <a href="#">
+                      <li>Performace Velvet Seating</li>
+                    </a>
+                    <a href="#">
+                      <li>All Seating</li>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav__menu__inner">
+            <span class="menu__label">Living Room <i class="fa fa-angle-down"></i></span>
+            <div class="menu__label_content">
+              <div class="row">
+                <div class="col-lg-3">
+                  <h3>Seating</h3>
+                  <ul>
+                    <a href="#">
+                      <li>Sectionals</li>
+                    </a>
+                    <a href="#">
+                      <li>Sofas</li>
+                    </a>
+                    <a href="#">
+                      <li>Loveseats</li>
+                    </a>
+                    <a href="#">
+                      <li>Accent Chairs</li>
+                    </a>
+                    <a href="#">
+                      <li>Sleepers</li>
+                    </a>
+                    <a href="#">
+                      <li>Sleep Kits</li>
+                    </a>
+                    <a href="#">
+                      <li>Ottomans</li>
+                    </a>
+                    <a href="#">
+                      <li>Seating Accessories</li>
+                    </a>
+                    <a href="#">
+                      <li>All Seating</li>
+                    </a>
+                  </ul>
+                </div>
+                <div class="col-lg-3">
+                  <h3>Tables, Carts & Benches</h3>
+                  <ul>
+                    <a href="#">
+                      <li>Coffe Tables</li>
+                    </a>
+                    <a href="#">
+                      <li>Side Tables</li>
+                    </a>
+                    <a href="#">
+                      <li>Bar Carts</li>
+                    </a>
+                    <a href="#">
+                      <li>Benches</li>
+                    </a>
+                    <a href="#">
+                      <li>All Tables & Carts</li>
+                    </a>
+                  </ul>
+                </div>
+
+                <div class="col-lg-3">
+                  <h3>Accessories</h3>
+                  <ul>
+                    <a href="#">
+                      <li>Seating Accessories</li>
+                    </a>
+                    <a href="#">
+                      <li>Throw Pillows</li>
+                    </a>
+                    <a href="#">
+                      <li>Throw Blankets</li>
+                    </a>
+                    <a href="#">
+                      <li>Trays</li>
+                    </a>
+                    <a href="#">
+                      <li>Lighting</li>
+                    </a>
+                    <a href="#">
+                      <li>Clearance</li>
+                    </a>
+                    <a href="#">
+                      <li>All Accessories</li>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav__menu__inner">
+            <span class="menu__label">Outdoor <i class="fa fa-angle-down"></i></span>
+            <div class="menu__label_content">
+              <div class="row">
+                <div class="col-lg-3">
+
+                  <ul>
+                    <a href="#">
+                      <li>Sectionals</li>
+                    </a>
+                    <a href="#">
+                      <li>Sofas</li>
+                    </a>
+                    <a href="#">
+                      <li>Loveseats</li>
+                    </a>
+                    <a href="#">
+                      <li>Accent Chairs</li>
+                    </a>
+                    <a href="#">
+                      <li>Sleepers</li>
+                    </a>
+                    <a href="#">
+                      <li>Sleep Kits</li>
+                    </a>
+                    <a href="#">
+                      <li>Ottomans</li>
+                    </a>
+                    <a href="#">
+                      <li>Seating Accessories</li>
+                    </a>
+                    <a href="#">
+                      <li>All Seating</li>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav__menu__inner">
+            <span class="menu__label">Bedroom <i class="fa fa-angle-down"></i></span>
+            <div class="menu__label_content">
+              <div class="row">
+                <div class="col-lg-3">
+
+                  <ul>
+                    <a href="#">
+                      <li>Sectionals</li>
+                    </a>
+                    <a href="#">
+                      <li>Sofas</li>
+                    </a>
+                    <a href="#">
+                      <li>Loveseats</li>
+                    </a>
+                    <a href="#">
+                      <li>Accent Chairs</li>
+                    </a>
+                    <a href="#">
+                      <li>Sleepers</li>
+                    </a>
+                    <a href="#">
+                      <li>Sleep Kits</li>
+                    </a>
+                    <a href="#">
+                      <li>Ottomans</li>
+                    </a>
+                    <a href="#">
+                      <li>Seating Accessories</li>
+                    </a>
+                    <a href="#">
+                      <li>All Seating</li>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav__menu__inner">
+            <span class="menu__label">Storage <i class="fa fa-angle-down"></i></span>
+            <div class="menu__label_content">
+              <div class="row">
+                <div class="col-lg-3">
+
+                  <ul>
+                    <a href="#">
+                      <li>Sectionals</li>
+                    </a>
+                    <a href="#">
+                      <li>Sofas</li>
+                    </a>
+                    <a href="#">
+                      <li>Loveseats</li>
+                    </a>
+                    <a href="#">
+                      <li>Accent Chairs</li>
+                    </a>
+                    <a href="#">
+                      <li>Sleepers</li>
+                    </a>
+                    <a href="#">
+                      <li>Sleep Kits</li>
+                    </a>
+                    <a href="#">
+                      <li>Ottomans</li>
+                    </a>
+                    <a href="#">
+                      <li>Seating Accessories</li>
+                    </a>
+                    <a href="#">
+                      <li>All Seating</li>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav__menu__mobile">
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="container">
+        <div class="product-detail-inner">
+          <h5>Nomad Collection</h5>
+          <div class="row">
+            <div class="col-lg-9">
+              <img src="./assets/products/1/product.webp" alt="ProductDetail" />
+
+              <div class="image-gallery-blocks">
+                <div class="product-detail-img-gallery-bottom"></div>
+
+                <div class="product-detail-img-gallery-bottom"></div>
+
+                <div class="product-detail-img-gallery-bottom"></div>
+
+                <div class="product-detail-img-gallery-bottom"></div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="porduct-detail-list">
+                <h3>Block Nomad Sofa</h3>
+                <h6>$1595+ Free Shipping</h6>
+
+                <div class="product-detail-fabric">
+                  <p><span>Fabric Color -</span> Navy Blue</p>
+
+                  <div class="mt-2 mb-4">
+                    <div style="
+                        display: flex;
+                        justify-content: space-between;
+                        padding-right: 20px;
+                      ">
+                      <div class="input-blue">
+                        <input type="radio" checked id="blue" name="fabric" />
+                        <label for="blue"></label>
+                      </div>
+
+                      <div class="input-green">
+                        <input type="radio" id="green" name="fabric" />
+                        <label for="green"></label>
+                      </div>
+
+                      <div class="input-brown">
+                        <input type="radio" id="brown" name="fabric" />
+                        <label for="brown"></label>
+                      </div>
+
+                      <div class="input-green">
+                        <input type="radio" id="green-second" name="fabric" />
+                        <label for="green-second"></label>
+                      </div>
+
+                      <div class="input-black">
+                        <input type="radio" id="green-black" name="fabric" />
+                        <label for="green-black"></label>
+                      </div>
+
+                      <div class="input-black">
+                        <input type="radio" id="green-black-second" name="fabric" />
+                        <label for="green-black-second"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-detail-arm-style">
+                  <p><span>Upgrades</span></p>
+                  <div class="arm-sty-list">
+                    <div class="simple-arm-list">
+                      <div>
+                        <input type="checkbox" id="myCheckbox1" />
+                        <label for="myCheckbox1"><img src="./assets/icons/icon-style-simple1.png" /></label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="myCheckbox2" />
+                        <label for="myCheckbox2"><img src="./assets/icons/icon-style-simple2.png" /></label>
+                      </div>
+                    </div>
+                    <div class="simple-flip-list">
+                      <div>
+                        <input type="checkbox" id="myCheckbox3" />
+                        <label for="myCheckbox3"><img src="./assets/icons/icon-flip.png" /></label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="myCheckbox4" />
+                        <label for="myCheckbox4"><img src="./assets/icons/icon-flip-1.png" /></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-detail-checkbox">
+                  <p><span>Upgrades</span></p>
+
+                  <div class="checkbox-list">
+                    <div class="form-checkbox">
+                      <input class="checkbox" type="checkbox" id="move-chaise" />
+                      <label for="move-chaise" tabindex="1">Moveable chaise + $495</label>
+                    </div>
+                    <div class="form-checkbox">
+                      <input class="checkbox" type="checkbox" id="ottom" />
+                      <label for="ottom" tabindex="2">Ottoman + $345</label>
+                    </div>
+                    <div class="form-checkbox">
+                      <input class="checkbox" type="checkbox" id="lumbar-pillows" />
+                      <label for="lumbar-pillows" tabindex="2">Lumbar Pillows + $135</label>
+                    </div>
+                    <div class="form-checkbox">
+                      <input class="checkbox" type="checkbox" id="sleep-kit" />
+                      <label for="sleep-kit" tabindex="2">Sleep Kit + $295</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <button class="btn btn-primary mt-4">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="product-detail-dimentions">
+          <h3>Dimensions</h3>
+          <div class="row mt-3">
+            <div class="col-lg-5">
+              <div class="product-detail-table-content">
+                <div>
+                  <p>General Dimensions</p>
+                </div>
+                <div>
+                  <p>86" L x 61" D x 33" H</p>
+                </div>
+              </div>
+
+              <div class="product-detail-table-content">
+                <div>
+                  <p>Seat Height</p>
+                </div>
+                <div>
+                  <p>17"</p>
+                </div>
+              </div>
+
+              <div class="product-detail-table-content">
+                <div>
+                  <p>Arm Height</p>
+                </div>
+                <div>
+                  <p>23"</p>
+                </div>
+              </div>
+
+              <div class="product-detail-table-content">
+                <div>
+                  <p>Chaise Length</p>
+                </div>
+                <div>
+                  <p>13"</p>
+                </div>
+              </div>
+
+              <div class="product-detail-table-content">
+                <div>
+                  <p>Seat Depth</p>
+                </div>
+                <div>
+                  <p>134"</p>
+                </div>
+              </div>
+
+              <div class="product-detail-table-content">
+                <div>
+                  <p>Chaise Seat Depth</p>
+                </div>
+                <div>
+                  <p>11"</p>
+                </div>
+              </div>
+
+              <div class="product-detail-table-content">
+                <div>
+                  <p>Leg Height</p>
+                </div>
+                <div>
+                  <p>7”</p>
+                </div>
+              </div>
+
+              <div class="product-detail-table-content">
+                <div>
+                  <p>Ottoman Dimensions</p>
+                </div>
+                <div>
+                  <p>26" L x 26" W x 17" H</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <img src="./assets/image-10.png" alt="image10" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-0">
+      <div class="container">
+        <div class="project-detail-about">
+          <h3>About this piece</h3>
+          <p>
+            The ideal three-seat sofa featuring one seat with a chaise lounge
+            addition, one seat with an ottoman, and one seat for the
+            chiropractor who loves to sit upright with their feet on the floor.
+            Like everything we make, our modular design is incredibly easy to
+            move and packed with all the clever, life-changing features you
+            expect from Burrow, starting with a built-in USB charger.
+          </p>
+
+          <div class="row">
+            <div class="col-lg-6 about-points">
+              <h5>Customizable</h5>
+              <p>
+                Create your ideal sectional sofa with five fabric colors, six
+                leg finishes, and three armrest heights. You can even swap the
+                reversible back cushions: one side is tufted for a classic look,
+                the other smooth and contemporary.
+              </p>
+            </div>
+
+            <div class="col-lg-6 about-points">
+              <h5>Adaptable</h5>
+              <p>
+                Rest easy with the knowledge that your new furniture can grow
+                and expand with your life, thanks to the universal, modular
+                design of our Nomad Collection.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-5">
+      <div class="container">
+        <div class="product-detail-key-features">
+          <h3>Key features</h3>
+
+          <div class="row">
+            <div class="col-lg-2 col-xs-6">
+              <img src="./assets/icon-2.webp" alt="icon-2" />
+              <p>Customizable</p>
+            </div>
+
+            <div class="col-lg-2 col-xs-6">
+              <img src="./assets/icon-3.webp" alt="icon-2" />
+              <p>Customizable</p>
+            </div>
+
+            <div class="col-lg-2 col-xs-6">
+              <img src="./assets/icon-4.webp" alt="icon-2" />
+              <p>Customizable</p>
+            </div>
+
+            <div class="col-lg-2 col-xs-6">
+              <img src="./assets/icon-1.webp" alt="icon-2" />
+              <p>Customizable</p>
+            </div>
+
+            <div class="col-lg-2 col-xs-6">
+              <img src="./assets/icon-5.webp" alt="icon-2" />
+              <p>Customizable</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="product-detail-bottom">
+          <div class="row">
+            <div class="col-lg-6">
+              <video controls width="100%" poster="./assets/Rectangle-34.png">
+                <source src="./assets/product-video-1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="col-lg-6">
+              <h3>Durable enough for everyday drama</h3>
+
+              <p>
+                Each and every component of our furniture is selected for
+                durability, from the galvanized steel latches to the
+                precision-milled Baltic Birch frame. The fabric is inherently
+                scratch-resistant, thanks to an incredibly tight weave, which
+                makes it perfect for pets and their parents.
+              </p>
+
+              <div class="box-margin">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h5>Low carbon footprint</h5>
+                    <p class="points-mt">Fabric made from upcycled materials</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <h5>Sustainable wood</h5>
+                    <p class="points-mt">
+                      Sourced from responsibly managed forests
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-lg-6">
+              <h3>Don't sweat the spills</h3>
+
+              <p>
+                Our olefin fabric is stain-resistant thanks to a deep dyeing
+                process that colors each individual strand to the core, as
+                opposed to other fibers that have little pores that absorb
+                stains. You can even spray spills with a water and bleach
+                solution (yes, we said bleach) and blot it out to clean stains.
+              </p>
+
+              <div class="box-margin">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h5>Non toxic</h5>
+                    <p class="points-mt">
+                      Zero chemical additives or treatments
+                    </p>
+                  </div>
+                  <div class="col-lg-6">
+                    <h5>Zero PFCs</h5>
+                    <p class="points-mt">
+                      Fabric free of dangerous formaldehydes
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <video controls width="100%" poster="./assets/Rectangle-35.png">
+                <source src="./assets/product-video-2.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="product-detail-bottom-products">
+          <h3>Here's what else our designers recommend</h3>
+
+          <div class="row">
+            <div class="col-lg-4">
+              <a href="product-detail.html">
+                <img src="./assets/products/1/product.webp" alt="Porduct" />
+              </a>
+              <h5>Nomad Sofa</h5>
+              <p>$1595 or as low as $100/mo</p>
+            </div>
+
+            <div class="col-lg-4">
+              <img src="./assets/products/1/product.webp" alt="Porduct" />
+              <h5>Nomad Sofa</h5>
+              <p>$1595 or as low as $100/mo</p>
+            </div>
+
+            <div class="col-lg-4">
+              <img src="./assets/products/1/product.webp" alt="Porduct" />
+              <h5>Nomad Sofa</h5>
+              <p>$1595 or as low as $100/mo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe__banner">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="input-group">
+            <input type="text" placeholder="Sign up for enthralling couch reads" />
+            <button class="btn">Subscribe</button>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <ul class="social-links">
+            <li>
+              <a href=""><img src="./assets/socials/icons8-facebook.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./assets/socials/icons8-instagram.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="./assets/socials/icons8-youtube.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row">
+        <div class="col-lg-3">
+          <ul>
+            <li><a href="">Shopping Service</a></li>
+            <li><a href="">Schedule Consulation</a></li>
+            <li><a href="">Showrooms</a></li>
+            <li><a href="">Trade Program</a></li>
+            <li><a href="">Outlet</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Our Story</a></li>
+            <li><a href="">Reviews</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Financing</a></li>
+            <li><a href="">Patents</a></li>
+            <li><a href="">Our Blogs</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <ul>
+            <li><a href="">Resources</a></li>
+            <li><a href="">Look Up Order Status</a></li>
+            <li><a href="">Assembly Instructions</a></li>
+            <li><a href="">Returns</a></li>
+            <li><a href="">Shipping & Delivery</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Refer a Friend</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <ul>
+            <li><a href="">Contact Customer Experience</a></li>
+            <li>
+              Email:
+              <a href="mailto:support@template.com">support@template.com</a>
+            </li>
+            <li>Text: <a href="tel:224-628-7769">224-628-7769</a></li>
+            <li>Hours:<a href=""></a></li>
+            <li><a href="">Monday to Friday — 10a to 8p EST</a></li>
+            <li><a href="">Saturday to Sunday — 10a to 2p EST</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <p>
+            © 2023 Template <br />
+            Terms - Accessibility - Sitemap - Privacy
+          </p>
+        </div>
+        <div class="col-lg-6 text-right">
+          <p>15 W 27th Street, 9th Floor New York, NY, 10001</p>
+        </div>
+      </div>
+    </footer>
+
+
+    <script>
+      // Obter o ID do produto a partir do URL
+      function getProductIdFromUrl() {
+        const url = window.location.href;
+        const urlParts = url.split('/');
+        const lastPart = urlParts[urlParts.length - 1];
+        const productId = parseInt(lastPart);
+        return productId;
+      }
+
+      // Obter os detalhes do produto
+      function getProductDetails(productId) {
+        return fetch(`https://fakestoreapi.com/products/${productId}`)
+          .then(response => response.json())
+          .then(data => data);
+      }
+
+      // Adicionar o produto ao carrinho
+      function addToCart(userId, productId, quantity) {
+        const cartEndpoint = 'https://fakestoreapi.com/carts/7';
+        const currentDate = new Date().toISOString().split('T')[0];
+
+        const cartData = {
+          userId: userId,
+          date: currentDate,
+          products: [
+            {
+              productId: productId,
+              quantity: quantity
+            }
+          ]
+        };
+
+        return fetch(cartEndpoint, {
+          method: 'PUT',
+          body: JSON.stringify(cartData)
+        })
+          .then(response => response.json())
+          .then(data => data);
+      }
+
+      // Detalhes do produto na página
+      function displayProductDetails(product) {
+        const productDetails = document.getElementById('productDetails');
+        productDetails.innerHTML = `
+    <h2>${product.title}</h2>
+    <p>Category: ${product.category}</p>
+    <p>Price: $${product.price}</p>
+    <p>Description: ${product.description}</p>
+  `;
+      }
+
+      // Produtos relacionados
+      function getRelatedProducts(categoryId) {
+        return fetch(`https://fakestoreapi.com/products/category/${categoryId}`)
+          .then(response => response.json())
+          .then(data => data.slice(0, 3));
+      }
+
+      // Produtos relacionados na grelha
+      function displayRelatedProducts(products) {
+        const relatedProductsGrid = document.getElementById('relatedProductsGrid');
+        relatedProductsGrid.innerHTML = '';
+
+        products.forEach(product => {
+          const relatedProductItem = document.createElement('div');
+          relatedProductItem.innerHTML = `
+      <h3>${product.title}</h3>
+      <img src="${product.image}" alt="${product.title}" />
+    `;
+          relatedProductsGrid.appendChild(relatedProductItem);
+        });
+      }
+
+      const userId = 1;
+
+      // Obter o ID do produto a partir do URL
+      const productId = getProductIdFromUrl();
+
+      // Obter os detalhes do produto e exibi-los na página
+      getProductDetails(productId)
+        .then(product => {
+          displayProductDetails(product);
+          return product.category;
+        })
+        .then(categoryId => getRelatedProducts(categoryId))
+        .then(relatedProducts => displayRelatedProducts(relatedProducts))
+        .catch(error => {
+          console.error('Erro:', error);
+        });
+
+      // Adicionar evento de clique ao botão "Add to Cart"
+      const addToCartButton = document.getElementById('addToCartButton');
+      addToCartButton.addEventListener('click', () => {
+        const quantity = 1;
+        addToCart(userId, productId, quantity)
+          .then(data => {
+            console.log('Produto adicionado ao carrinho:', data);
+          })
+          .catch(error => {
+            console.error('Erro ao adicionar o produto ao carrinho:', error);
+          });
+      });
+
+    </script>
+  </body>
+
+</html>
+</body>
+
+</html>

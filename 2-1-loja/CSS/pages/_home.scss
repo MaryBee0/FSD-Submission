@@ -1,0 +1,99 @@
+#loading {
+  display: none;
+}
+
+.section_outer {
+  section {
+    padding: 0px;
+  }
+  .service__desc {
+    background-color: #f7eee3;
+    height: 256px;
+    display: flex;
+    align-items: center;
+    .container .row {
+      align-items: center !important;
+    }
+    .__box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 16px;
+
+      p {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+      }
+    }
+  }
+
+  // media queries //
+  @media screen and (max-width: 768px) {
+    .service__desc {
+      height: auto;
+      padding: 40px 0px;
+    }
+  }
+}
+
+.nomad-section {
+  background-color: #f7eee3;
+  height: 700px;
+  .content {
+    background-image: url(../assets/Nomad-Collection-V2.png);
+    background-repeat: no-repeat;
+    height: 700px;
+    background-size: contain;
+    background-position: right;
+    // media queries //
+
+    .text-outer {
+      .content-inner {
+        padding-top: 100px;
+        width: 292px;
+        h4 {
+          color: #000000;
+          text-decoration-line: underline;
+          letter-spacing: 0.76em;
+          font-style: italic;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 37px;
+        }
+
+        p {
+          margin-top: 31px;
+          font-size: 20px;
+          line-height: 37px;
+          font-style: italic;
+          span {
+            font-weight: 600;
+          }
+        }
+
+        a {
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 37px;
+          color: #000000;
+          margin-top: 14px;
+          text-decoration: none;
+        }
+      }
+
+      // media query //
+      @media screen and (max-width: 768px) {
+        .content-inner {
+          padding-top: 40px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .content {
+      background-position: bottom;
+    }
+  }
+}

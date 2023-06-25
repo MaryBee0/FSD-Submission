@@ -1,0 +1,51 @@
+// multipliers
+$spacer: 1rem !default;
+
+@for $i from 0 through 10 {
+  .m-#{$i} {
+    margin: $spacer * $i;
+  }
+  .mt-#{$i} {
+    margin-top: $spacer * $i;
+  }
+  .mr-#{$i} {
+    margin-right: $spacer * $i;
+  }
+  .mb-#{$i} {
+    margin-bottom: $spacer * $i;
+  }
+  .ml-#{$i} {
+    margin-left: $spacer * $i;
+  }
+  .mx-#{$i} {
+    margin-left: $spacer * $i;
+    margin-right: $spacer * $i;
+  }
+  .my-#{$i} {
+    margin-top: $spacer * $i;
+    margin-bottom: $spacer * $i;
+  }
+  .p-#{$i} {
+    padding: $spacer * $i;
+  }
+  .pt-#{$i} {
+    padding-top: $spacer * $i;
+  }
+  .pr-#{$i} {
+    padding-right: $spacer * $i;
+  }
+  .pb-#{$i} {
+    padding-bottom: $spacer * $i;
+  }
+  .pl-#{$i} {
+    padding-left: $spacer * $i;
+  }
+  .px-#{$i} {
+    padding-left: $spacer * $i;
+    padding-right: $spacer * $i;
+  }
+  .py-#{$i} {
+    padding-top: $spacer * $i;
+    padding-bottom: $spacer * $i;
+  }
+}

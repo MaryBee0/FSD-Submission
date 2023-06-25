@@ -2,252 +2,639 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <title>Home</title>
 </head>
 
 <body>
-    <header>
-        <nav class="nav">
-            <a class="nav__logo" href="">
-                <img src="/HTML-CSS/2-1-loja/assets/edit-extended-logo.png" class="nav__logo" alt="logo" />
-            </a>
-            <div class="nav__menu">
-                <a class="nav__menu" href="/seating.html">
-                    <span class="menu__label">Seating </span>
-                    <div class="menu__label_content">
-                        Shop by Category Sectionals Sofas Loveseats Accent Chairs Sleepers
-                        Sleep Kits Ottomans Seating Accessories All Seating
-                    </div>
-                </a>
-                <a class="nav__menu" href="/Living Room.html">
-                    <span class="menu__label">Living Room</span>
-                    <div class="menu__label_content">
-                        Shop by Category Sectionals Sofas Loveseats Accent Chairs Sleepers
-                        Sleep Kits Ottomans Seating Accessories All Seating
-                    </div>
-                </a>
 
-            </div>
-        </nav>
-    </header>
-    <div class="splash">
-        <img src="/HTML-CSS/2-1-loja/assets/splash-screen.webp" class="splash" alt="splash" />
-        <div class="container">
-            <div class="splash__content">
-                <h3>Clever designs, delivered free</h3>
-                <button class="btn btn-primary">Shop bedroom</button>
-            </div>
-        </div>
-    </div>
-
-    <section>
-        <h2>Clever designs, delivered free</h2>
-        <div class="container">
+  <div id="loading">Loading...</div>
+  <ul id="menu"></ul>
+  <div id="homepage"></div>
+  <header>
+    <nav class="nav">
+      <a class="nav__logo" href="index.html">
+        <img src="./assets/edit-extended-logo.png" class="nav__logo" alt="logo" />
+      </a>
+      <div class="nav__menu responsive">
+        <div class="nav__menu__inner">
+          <span class="menu__label">Seating <i class="fas fa-angle-down"></i> </span>
+          <div class="menu__label_content">
             <div class="row">
-                <div class="col-lg-4">
-                    <a href="" class="images_content">
-                        <img src="/HTML-CSS/2-1-loja/assets/category-seating.webp" alt="" />
-                    </a>
-                </div>
-                <div class="col-lg-4">
-                    <a href="/HTML-CSS/2-1-loja/assets/category-outdoor.webp" class="images_content">
-                        <img src="/HTML-CSS/2-1-loja/assets/category-outdoor.webp" alt="" />
-                    </a>
-                </div>
-                <div class="col-lg-4">
-                    <a href="/HTML-CSS/2-1-loja/assets/category-storage.webp" class="images_content">
-                        <img src="/HTML-CSS/2-1-loja/assets/category-storage.webp" alt="" />
-                    </a>
-                </div>
-                <div class="col-lg-4">
-                    <a href="/HTML-CSS/2-1-loja/assets/category-bedroom.webp" class="images_content">
-                        <img src="/HTML-CSS/2-1-loja/assets/category-bedroom.webp" alt="" />
-                    </a>
-                </div>
-                <div class="col-lg-4">
-                    <a href="assets/category-tables.webp" class="images_content">
-                        <img src="assets/category-tables.webp" alt="" />
-                    </a>
-                </div>
-                <div class="col-lg-4">
-                    <a href="assets/category-rugs.webp" class="images_content">
-                        <img src="assets/category-rugs.webp" alt="" />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+              <div class="col-lg-3">
+                <h3>Shop by Category</h3>
+                <ul>
+                  <a href="#">
+                    <li>Sectionals</li>
+                  </a>
+                  <a href="#">
+                    <li>Sofas</li>
+                  </a>
+                  <a href="#">
+                    <li>Loveseats</li>
+                  </a>
+                  <a href="#">
+                    <li>Accent Chairs</li>
+                  </a>
+                  <a href="#">
+                    <li>Sleepers</li>
+                  </a>
+                  <a href="#">
+                    <li>Sleep Kits</li>
+                  </a>
+                  <a href="#">
+                    <li>Ottomans</li>
+                  </a>
+                  <a href="#">
+                    <li>Seating Accessories</li>
+                  </a>
+                  <a href="#">
+                    <li>All Seating</li>
+                  </a>
+                </ul>
+              </div>
 
-    <div class="section_outer">
-        <section class="service__desc">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="__box">
-                            <img src="./assets/service-img-1.png" alt="" />
-                            <p>
-                                Fast & free shipping Every single order ships for free. No
-                                minimums, no tiers, no fine print whatsoever.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="__box">
-                            <img src="./assets/service-img-2.png" alt="" />
-                            <p>
-                                Modular, easy-to-move design Our innovative modular design is
-                                driven by the belief that furniture should fit this home, and
-                                the next one.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="__box">
-                            <img src="./assets/service-img-3.png" alt="" />
-                            <p>
-                                Durable, premium materials We use materials like
-                                sustainably-forested wood, strengthened steel hardware, and
-                                top-grain Italian leather.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+              <div class="col-lg-3">
+                <h3>Shop by Collection</h3>
+                <ul>
+                  <a href="#">
+                    <li>Nomad Collection</li>
+                  </a>
+                  <a href="#">
+                    <li>Field Collection</li>
+                  </a>
+                  <a href="#">
+                    <li>Range Collection</li>
+                  </a>
+                  <a href="#">
+                    <li>Union Collection</li>
+                  </a>
+                  <a href="#">
+                    <li>New</li>
+                  </a>
+                  <a href="#">
+                    <li>Compare Collections</li>
+                  </a>
+                </ul>
+              </div>
+
+              <div class="col-lg-3">
+                <h3>Shop by Uphoistery</h3>
+                <ul>
+                  <a href="#">
+                    <li>Performace Fabric Seating</li>
+                  </a>
+                  <a href="#">
+                    <li>Italian Leather Seating</li>
+                  </a>
+                  <a href="#">
+                    <li>Performace Velvet Seating</li>
+                  </a>
+                  <a href="#">
+                    <li>All Seating</li>
+                  </a>
+                </ul>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+        <div class="nav__menu__inner">
+          <span class="menu__label">Living Room <i class="fa fa-angle-down"></i></span>
+          <div class="menu__label_content">
+            <div class="row">
+              <div class="col-lg-3">
+                <h3>Seating</h3>
+                <ul>
+                  <a href="./product.html">
+                    <li>Sectionals</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Sofas</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Loveseats</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Accent Chairs</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Sleepers</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Sleep Kits</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Ottomans</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Seating Accessories</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>All Seating</li>
+                  </a>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <h3>Tables, Carts & Benches</h3>
+                <ul>
+                  <a href="./product.html">
+                    <li>Coffe Tables</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Side Tables</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Bar Carts</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Benches</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>All Tables & Carts</li>
+                  </a>
+                </ul>
+              </div>
+
+              <div class="col-lg-3">
+                <h3>Accessories</h3>
+                <ul>
+                  <a href="./product.html">
+                    <li>Seating Accessories</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Throw Pillows</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Throw Blankets</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Trays</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Lighting</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Clearance</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>All Accessories</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav__menu__inner">
+          <span class="menu__label">Outdoor <i class="fa fa-angle-down"></i></span>
+          <div class="menu__label_content">
+            <div class="row">
+              <div class="col-lg-3">
+                <!-- <h3>Shop by Category</h3> -->
+                <ul>
+                  <a href="./product.html">
+                    <li>Sectionals</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Sofas</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Loveseats</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Accent Chairs</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Sleepers</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Sleep Kits</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Ottomans</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Seating Accessories</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>All Seating</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav__menu__inner">
+          <span class="menu__label">Bedroom <i class="fa fa-angle-down"></i></span>
+          <div class="menu__label_content">
+            <div class="row">
+              <div class="col-lg-3">
+                <!-- <h3>Shop by Category</h3> -->
+                <ul>
+                  <a href="./product.html">
+                    <li>Sectionals</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Sofas</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Loveseats</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Accent Chairs</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Sleepers</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Sleep Kits</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Ottomans</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Seating Accessories</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>All Seating</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav__menu__inner">
+          <span class="menu__label">Storage <i class="fa fa-angle-down"></i></span>
+          <div class="menu__label_content">
+            <div class="row">
+              <div class="col-lg-3">
+                <!-- <h3>Shop by Category</h3> -->
+                <ul>
+                  <a href="./product.html">
+                    <li>Sectionals</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Sofas</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Loveseats</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Accent Chairs</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Sleepers</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Sleep Kits</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Ottomans</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>Seating Accessories</li>
+                  </a>
+                  <a href="./product.html">
+                    <li>All Seating</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav__menu__mobile">
+        <a href="">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <div class="splash">
+    <img src="./assets/splash-screen.webp" class="splash" alt="splash" />
+    <div class="container">
+      <div class="splash__content">
+        <h3>Clever designs, delivered free</h3>
+        <button class="btn btn-primary">Shop bedroom</button>
+      </div>
     </div>
-    <section>
-        <h2>Clever designs, delivered free</h2>
-        <div class="container">
-            <div class="row row__16">
-                <div class="col-lg-3"><img src="./assets/design-1.png" alt="" /></div>
-                <div class="col-lg-3"><img src="./assets/design-2.png" alt="" /></div>
-                <div class="col-lg-3"><img src="./assets/design-3.png" alt="" /></div>
-                <div class="col-lg-3"><img src="./assets/design-4.png" alt="" /></div>
-            </div>
+  </div>
+
+  <section>
+    <h2>Clever designs, delivered free</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-xs-6">
+          <a href="product-detail.html" class="images_content">
+            <img src="./assets/products/outer/Rectangle 2.png" alt="" />
+          </a>
         </div>
-    </section>
-    <section class="nomad-section p-0">
-        <div class="content">
-            <div class="container text-outer">
-                <div class="content-inner">
-                    <h4>NOWAD</h4>
-                    <p>
-                        <span>The Ambid</span> system works beautifully. It's comfortable,
-                        absolutely solid, and looks great.
-                    </p>
-                    <a href="#">SHOP NOW</a>
-                </div>
-            </div>
+        <div class="col-lg-4 col-xs-6">
+          <a href="./assets/category-outdoor.webp" class="images_content">
+            <img src="./assets/products/outer/Rectangle 3.png" alt="" />
+          </a>
         </div>
-    </section>
-    <section class="pt-5">
-        <div class="container">
-            <h2>Shop these real-life spaces</h2>
-            <div class="row row__16">
-                <div class="col-lg-3"><img src="./assets/design-1.png" alt="" /></div>
-                <div class="col-lg-3"><img src="./assets/design-2.png" alt="" /></div>
-                <div class="col-lg-3"><img src="./assets/design-3.png" alt="" /></div>
-                <div class="col-lg-3"><img src="./assets/design-4.png" alt="" /></div>
-            </div>
+        <div class="col-lg-4 col-xs-6">
+          <a href="./assets/category-storage.webp" class="images_content">
+            <img src="./assets/products/outer/Rectangle 4.png" alt="" />
+          </a>
         </div>
-    </section>
-    <section>
-        <h2>Modular, easy-to-move design</h2>
-        <video width="100%" autoplay muted>
-            <source src="/HTML-CSS/2-1-loja/assets/background-video.mp4" type="video/mp4" />
-        </video>
-        <div class="text-center mt-2">
-            <button class="btn btn-primary">Shop Seating</button>
+        <div class="col-lg-4 col-xs-6">
+          <a href="./assets/category-bedroom.webp" class="images_content">
+            <img src="./assets/products/outer/Rectangle 5.png" alt="" />
+          </a>
         </div>
-    </section>
-    <section class="subscribe__banner">
+        <div class="col-lg-4 col-xs-6">
+          <a href="./assets/category-tables.webp" class="images_content">
+            <img src="./assets/products/outer/Rectangle 6.png" alt="" />
+          </a>
+        </div>
+        <div class="col-lg-4 col-xs-6">
+          <a href="./assets/category-rugs.webp" class="images_content">
+            <img src="./assets/products/outer/Rectangle 7.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section_outer">
+    <section class="service__desc">
+      <div class="container">
         <div class="row">
-            <div class="col-lg-4">
-                <div class="input-group">
-                    <input type="text" placeholder="Sign up for enthralling couch reads" />
-                    <button class="btn">Subscribe</button>
-                </div>
+          <div class="col-lg-4">
+            <div class="__box">
+              <img src="./assets/service-img-1.png" alt="" />
+              <p>
+                Fast & free shipping Every single order ships for free. No
+                minimums, no tiers, no fine print whatsoever.
+              </p>
             </div>
-            <div class="col-lg-8">
-                <ul class="social-links">
-                    <li>
-                        <a href=""><img src="./assets/socials/icons8-facebook.svg" alt="" /></a>
-                    </li>
-                    <li>
-                        <a href=""><img src="./assets/socials/icons8-instagram.svg" alt="" /></a>
-                    </li>
-                    <li>
-                        <a href=""><img src="./assets/socials/icons8-youtube.svg" alt="" /></a>
-                    </li>
-                </ul>
+          </div>
+          <div class="col-lg-4">
+            <div class="__box">
+              <img src="./assets/service-img-2.png" alt="" />
+              <p>
+                Modular, easy-to-move design Our innovative modular design is
+                driven by the belief that furniture should fit this home, and
+                the next one.
+              </p>
             </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="__box">
+              <img src="./assets/service-img-3.png" alt="" />
+              <p>
+                Durable, premium materials We use materials like
+                sustainably-forested wood, strengthened steel hardware, and
+                top-grain Italian leather.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <footer>
-        <div class="row">
-            <div class="col-lg-3">
-                <ul>
-                    <li><a href="">Shopping Service</a></li>
-                    <li><a href="">Schedule Consulation</a></li>
-                    <li><a href="">Showrooms</a></li>
-                    <li><a href="">Trade Program</a></li>
-                    <li><a href="">Outlet</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3">
-                <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Our Story</a></li>
-                    <li><a href="">Reviews</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">Financing</a></li>
-                    <li><a href="">Patents</a></li>
-                    <li><a href="">Our Blogs</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3">
-                <ul>
-                    <li><a href="">Resources</a></li>
-                    <li><a href="">Look Up Order Status</a></li>
-                    <li><a href="">Assembly Instructions</a></li>
-                    <li><a href="">Returns</a></li>
-                    <li><a href="">Shipping & Delivery</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Refer a Friend</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3">
-                <ul>
-                    <li><a href="">Contact Customer Experience</a></li>
-                    <li>
-                        Email:
-                        <a href="mailto:support@template.com">support@template.com</a>
-                    </li>
-                    <li>Text: <a href="tel:224-628-7769">224-628-7769</a></li>
-                    <li>Hours:<a href=""></a></li>
-                    <li><a href="">Monday to Friday — 10a to 8p EST</a></li>
-                    <li><a href="">Saturday to Sunday — 10a to 2p EST</a></li>
-                </ul>
-            </div>
+  </div>
+  <section>
+    <h2>Clever designs, delivered free</h2>
+    <div class="container">
+      <div class="row row__16 response_image_mobile">
+        <div class="col-lg-3 col-xs-6">
+          <img src="./assets/design-1.png" alt="" />
         </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <p>
-                    © 2023 Template <br />
-                    Terms - Accessibility - Sitemap - Privacy
-                </p>
-            </div>
-            <div class="col-lg-6 text-right">
-                <p>15 W 27th Street, 9th Floor New York, NY, 10001</p>
-            </div>
+        <div class="col-lg-3 col-xs-6">
+          <img src="./assets/design-2.png" alt="" />
         </div>
-    </footer>
+        <div class="col-lg-3 col-xs-6">
+          <img src="./assets/design-3.png" alt="" />
+        </div>
+        <div class="col-lg-3 col-xs-6">
+          <img src="./assets/design-4.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="nomad-section p-0">
+    <div class="content">
+      <div class="container text-outer">
+        <div class="content-inner">
+          <h4>NOWAD</h4>
+          <p>
+            <span>The Ambid</span> system works beautifully. It's comfortable,
+            absolutely solid, and looks great.
+          </p>
+          <a href="#">SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pt-5">
+    <div class="container">
+      <h2>Shop these real-life spaces</h2>
+      <div class="row row__16 response_image_mobile">
+        <div class="col-lg-3 col-xs-6">
+          <img src="./assets/carousel/Range-Fabric-Stone-Gray.jpg" alt="Range-Fabric-Stone-Gray" />
+        </div>
+        <div class="col-lg-3 col-xs-6">
+          <img src="./assets/carousel/Kettle-Side-Table.webp" alt="Kettle-Side-Table" />
+        </div>
+        <div class="col-lg-3 col-xs-6">
+          <img src="./assets/carousel/Nomad-Velvet.webp" alt="Nomad-Velvet" />
+        </div>
+        <div class="col-lg-3 col-xs-6">
+          <img src="./assets/carousel/Nomad-Leather.webp" alt="Nomad-Leather" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2>Modular, easy-to-move design</h2>
+    <img width="100%" src="./assets/banner-2.png" alt="" />
+    <div class="text-center mt-2">
+      <button class="btn btn-primary">Shop Seating</button>
+    </div>
+  </section>
+  <section class="subscribe__banner">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="input-group">
+          <input type="email" id="emailInput" placeholder="Sign up for enthralling couch reads" />
+          <button class="btn" id="subscribeButton">Subscribe</button>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <ul class="social-links">
+          <li>
+            <a href=""><img src="./assets/socials/icons8-facebook.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="./assets/socials/icons8-instagram.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="./assets/socials/icons8-youtube.svg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="row">
+      <div class="col-lg-3">
+        <ul>
+          <li><a href="">Shopping Service</a></li>
+          <li><a href="">Schedule Consulation</a></li>
+          <li><a href="">Showrooms</a></li>
+          <li><a href="">Trade Program</a></li>
+          <li><a href="">Outlet</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Our Story</a></li>
+          <li><a href="">Reviews</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Financing</a></li>
+          <li><a href="">Patents</a></li>
+          <li><a href="">Our Blogs</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <ul>
+          <li><a href="">Resources</a></li>
+          <li><a href="">Look Up Order Status</a></li>
+          <li><a href="">Assembly Instructions</a></li>
+          <li><a href="">Returns</a></li>
+          <li><a href="">Shipping & Delivery</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Refer a Friend</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <ul>
+          <li><a href="">Contact Customer Experience</a></li>
+          <li>
+            Email:
+            <a href="mailto:support@template.com">support@template.com</a>
+          </li>
+          <li>Text: <a href="tel:224-628-7769">224-628-7769</a></li>
+          <li>Hours:<a href=""></a></li>
+          <li><a href="">Monday to Friday — 10a to 8p EST</a></li>
+          <li><a href="">Saturday to Sunday — 10a to 2p EST</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6" id="copyright">
+      </div>
+      <div class="col-lg-6 text-right">
+        <p>15 W 27th Street, 9th Floor New York, NY, 10001</p>
+      </div>
+    </div>
+  </footer>
 </body>
+<script>
+
+  const navMenuInner = document.querySelectorAll(".nav__menu__inner");
+
+
+  navMenuInner.forEach((item) => {
+    item.addEventListener("mouseover", () => {
+      item.querySelector(".menu__label_content").classList.add("active");
+    });
+    item.addEventListener("mouseleave", () => {
+      item.querySelector(".menu__label_content").classList.remove("active");
+    });
+  });
+
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const loadingElement = document.getElementById('loading');
+    loadingElement.style.display = 'block';
+
+    setTimeout(() => {
+      loadingElement.style.display = 'none';
+    }, 3000);
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    // Obter as categorias dos produtos
+    fetch('https://fakestoreapi.com/products/categories')
+      .then(response => response.json())
+      .then(categories => {
+        // Aplicar as categorias no menu
+        const menuElement = document.getElementById('menu');
+        categories.forEach(category => {
+          const menuItem = document.createElement('li');
+          menuItem.textContent = category;
+          menuElement.appendChild(menuItem);
+        });
+
+        // Aplicar as categorias na página inicial
+        const homepageElement = document.getElementById('homepage');
+        categories.forEach(category => {
+          const categoryItem = document.createElement('div');
+          categoryItem.textContent = category;
+          homepageElement.appendChild(categoryItem);
+        });
+      });
+  });
+
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const subscribeButton = document.getElementById('subscribeButton');
+    const emailInput = document.getElementById('emailInput');
+
+    subscribeButton.addEventListener('click', event => {
+      event.preventDefault();
+
+      const formData = {
+        email: emailInput.value,
+      };
+
+      console.log('Formulário enviado! Dados:', formData);
+
+      fetch('https://fakeNewsletter.com', {
+        method: 'POST',
+        body: JSON.stringify(formData)
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+        });
+    });
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const copyrightElement = document.getElementById('copyright');
+
+    const currentYear = new Date().getFullYear();
+    copyrightElement.textContent = `${currentYear} © copyright`;
+  });
+
+
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+</script>
 
 </html>

@@ -1,0 +1,37 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  .response_image_mobile {
+    img {
+      object-fit: cover;
+      height: 200px;
+      border-radius: 5px;
+      width: 100%;
+    }
+  }
+}
+
+// m,edia queries
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 10px 10px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}

@@ -1,12 +1,18 @@
-@import "components/nav";
-@import "components/images";
-@import "components/splash";
-@import "components/footer";
-
 @import "partials/reset";
 @import "partials/grid";
 @import "partials/buttons";
 @import "partials/headers";
-
+@import "partials/footer";
 @import "partials/body";
 @import "partials/section";
+@import "partials/spacing";
+@import "partials/menu";
+
+@import "components/nav";
+@import "components/images";
+@import "components/splash";
+
+// pages
+@import "pages/home";
+@import "pages/products";
+@import "pages/product_detail";
